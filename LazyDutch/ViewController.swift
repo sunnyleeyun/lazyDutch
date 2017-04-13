@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var ResultView: UIView!
+    
+    @IBOutlet weak var howMuch: UILabel!
+    
     @IBOutlet weak var totalAmount: UITextField!
     
     @IBOutlet weak var ServiceFee: UISegmentedControl!
@@ -30,9 +34,9 @@ class ViewController: UIViewController {
     
     var fund = "0"
     
-    var person1 = "0"
-    var person2 = "0"
-    var person3 = "0"
+    var person1 = "0.0"
+    var person2 = "0.0"
+    var person3 = "0.0"
     
     
     override func viewDidLoad() {
@@ -83,19 +87,24 @@ class ViewController: UIViewController {
         
         
         // 建立N個輸入框
+//        alertController.addTextField {
+//            (txtEmail) -> Void in
+//            txtEmail.placeholder = "<Your email here>"
+//        }
+        
         alertController.addTextField {
             (textField: UITextField!) -> Void in
-            textField.placeholder = "$ Meal for Person 1"
+            textField.placeholder = "My Meal $"
             self.person1 = textField.text!
         }
         alertController.addTextField {
             (textField: UITextField!) -> Void in
-            textField.placeholder = "$ Meal for Person 2"
+            textField.placeholder = "Friend 1 Meal $"
             self.person2 = textField.text!
         }
         alertController.addTextField {
             (textField: UITextField!) -> Void in
-            textField.placeholder = "$ Meal for Person 3"
+            textField.placeholder = "Friend 2 Meal $"
             self.person3 = textField.text!
         }
         /*
@@ -173,6 +182,7 @@ class ViewController: UIViewController {
             style: UIAlertActionStyle.default) {
                 (action: UIAlertAction!) -> Void in
                 
+            person1 = text
                 
                 
         }
@@ -190,8 +200,11 @@ class ViewController: UIViewController {
     @IBAction func Calculate(_ sender: Any) {
         if totalAmount.text != ""{
             var totalOnebyOne = Double(person1)! + Double(person2)! + Double(person3)!
+            
             if Double(totalAmount.text!)! - totalOnebyOne - Double(fund)! > 0{
-                (Double(totalAmount.text!)! - totalOnebyOne - Double(fund)!)/Double(totalPeopleLabel)!
+                var result = (Double(totalAmount.text!)! - totalOnebyOne - Double(fund)!)/Double(totalPeopleLabel.text!)!
+                howMuch.text = String(result)
+                ResultView.isHidden = false
             }
         }
         

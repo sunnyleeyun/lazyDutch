@@ -100,6 +100,15 @@
                                     <action selector="ActionStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="7ez-jC-QnA"/>
                                 </connections>
                             </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDh-MM-c59">
+                                <rect key="frame" x="224" y="357" width="45" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="zm1-Rd-wq1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fib-Xu-42Q">
                                 <rect key="frame" x="224" y="461" width="40" height="31"/>
                                 <constraints>
@@ -136,15 +145,34 @@
                                     <action selector="Detail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ard-yT-ROF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDh-MM-c59">
-                                <rect key="frame" x="224" y="357" width="45" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="45" id="zm1-Rd-wq1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXp-Ep-fvy">
+                                <rect key="frame" x="74" y="507" width="226" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4V-UH-Hlq">
+                                        <rect key="frame" x="206" y="32" width="20" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSL-Aa-zl8">
+                                        <rect key="frame" x="147" y="32" width="50.5" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I need to pay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y51-C0-eLy">
+                                        <rect key="frame" x="0.0" y="32" width="116" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -193,8 +221,10 @@
                         <outlet property="FundSwitch" destination="Mw5-97-UXv" id="GlV-NJ-2zu"/>
                         <outlet property="OneByOnSwitch" destination="xgU-SV-MzG" id="RMt-hP-njk"/>
                         <outlet property="OneByOneButton" destination="HaI-SQ-C4E" id="wO9-0b-KMj"/>
+                        <outlet property="ResultView" destination="JXp-Ep-fvy" id="cnm-qT-JbG"/>
                         <outlet property="ServiceFee" destination="GwS-jE-eq1" id="u0a-Mj-Wce"/>
                         <outlet property="ServiceLabel" destination="mtU-DB-vlD" id="44A-hM-or7"/>
+                        <outlet property="howMuch" destination="WSL-Aa-zl8" id="13g-Yx-fW1"/>
                         <outlet property="totalAmount" destination="wXe-UC-dc4" id="fuc-h3-0VE"/>
                         <outlet property="totalPeopleLabel" destination="mDh-MM-c59" id="fsv-jq-CFx"/>
                         <outlet property="totalPeopleStepper" destination="qxb-1b-cIP" id="EIg-wM-MCa"/>
