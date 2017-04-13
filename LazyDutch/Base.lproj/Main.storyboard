@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LazyDutch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,189 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lazy &amp; " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvz-gj-1Gi">
+                                <rect key="frame" x="0.0" y="20" width="129.5" height="72"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DUTCH!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIr-m3-mr0">
+                                <rect key="frame" x="46" y="69" width="266" height="102.5"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqL-qD-KbH">
+                                <rect key="frame" x="57" y="211.5" width="119" height="31"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Fee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNe-UD-slW">
+                                <rect key="frame" x="57" y="262.5" width="102" height="31"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wXe-UC-dc4">
+                                <rect key="frame" x="224" y="211.5" width="120" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="NGC-sI-nel"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One By One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acf-HL-c03">
+                                <rect key="frame" x="57" y="407.5" width="114" height="31"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xgU-SV-MzG">
+                                <rect key="frame" x="295" y="407" width="51" height="31"/>
+                                <connections>
+                                    <action selector="ActionOneByOne:" destination="BYZ-38-t0r" eventType="valueChanged" id="03s-sW-mAL"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9p-LA-7vh">
+                                <rect key="frame" x="126" y="604" width="123" height="43"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <state key="normal" title="CALCULATE"/>
+                                <connections>
+                                    <action selector="Calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m03-HZ-wpt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqq-BJ-X88">
+                                <rect key="frame" x="57" y="356.5" width="109.5" height="31"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Mw5-97-UXv">
+                                <rect key="frame" x="295" y="458" width="51" height="31"/>
+                                <connections>
+                                    <action selector="ActionFund:" destination="BYZ-38-t0r" eventType="valueChanged" id="Cmr-JF-x69"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fund " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lei-Z8-NWz">
+                                <rect key="frame" x="57" y="458.5" width="50.5" height="31"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" autorepeat="NO" wraps="YES" value="1" minimumValue="1" maximumValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="qxb-1b-cIP">
+                                <rect key="frame" x="250" y="358" width="94" height="29"/>
+                                <connections>
+                                    <action selector="ActionStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="7ez-jC-QnA"/>
+                                </connections>
+                            </stepper>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fib-Xu-42Q">
+                                <rect key="frame" x="224" y="461" width="40" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="s4w-Px-7ML"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GwS-jE-eq1">
+                                <rect key="frame" x="36" y="303.5" width="303" height="29"/>
+                                <segments>
+                                    <segment title="No Need"/>
+                                    <segment title="10% Included"/>
+                                    <segment title="Add 10%"/>
+                                </segments>
+                                <connections>
+                                    <action selector="ActionSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="pzb-jw-1OX"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Need" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtU-DB-vlD">
+                                <rect key="frame" x="224" y="262" width="120" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="fyE-Nh-NMb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="16"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaI-SQ-C4E">
+                                <rect key="frame" x="224" y="408" width="40" height="30"/>
+                                <state key="normal" title="Detail"/>
+                                <connections>
+                                    <action selector="Detail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ard-yT-ROF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDh-MM-c59">
+                                <rect key="frame" x="224" y="357" width="45" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="zm1-Rd-wq1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HaI-SQ-C4E" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="388" id="0qu-7C-FFc"/>
+                            <constraint firstItem="Lei-Z8-NWz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="57" id="4S4-Zn-dkC"/>
+                            <constraint firstItem="wXe-UC-dc4" firstAttribute="top" secondItem="dIr-m3-mr0" secondAttribute="bottom" constant="40" id="4TE-wn-vLf"/>
+                            <constraint firstItem="TqL-qD-KbH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="57" id="4ge-8Y-Ca5"/>
+                            <constraint firstItem="Lei-Z8-NWz" firstAttribute="top" secondItem="acf-HL-c03" secondAttribute="bottom" constant="20" id="50c-gW-T55"/>
+                            <constraint firstItem="qxb-1b-cIP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="250" id="6fM-Sq-0Ej"/>
+                            <constraint firstAttribute="trailing" secondItem="u9p-LA-7vh" secondAttribute="trailing" constant="126" id="6na-tS-4gw"/>
+                            <constraint firstItem="TqL-qD-KbH" firstAttribute="top" secondItem="dIr-m3-mr0" secondAttribute="bottom" constant="40" id="7KS-Qo-dXK"/>
+                            <constraint firstAttribute="trailing" secondItem="dIr-m3-mr0" secondAttribute="trailing" constant="63" id="8IA-gS-6Iz"/>
+                            <constraint firstItem="wXe-UC-dc4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="224" id="8Zr-jV-aih"/>
+                            <constraint firstItem="Mw5-97-UXv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="295" id="Ckx-Wt-7TX"/>
+                            <constraint firstItem="GwS-jE-eq1" firstAttribute="top" secondItem="kNe-UD-slW" secondAttribute="bottom" constant="10" id="Ehe-kb-00w"/>
+                            <constraint firstItem="HaI-SQ-C4E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="224" id="KBX-p5-jRW"/>
+                            <constraint firstItem="acf-HL-c03" firstAttribute="top" secondItem="Rqq-BJ-X88" secondAttribute="bottom" constant="20" id="Khw-OE-xxa"/>
+                            <constraint firstItem="Mw5-97-UXv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="438" id="LIW-6D-IEA"/>
+                            <constraint firstItem="dIr-m3-mr0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="49" id="MCz-W1-kwt"/>
+                            <constraint firstItem="Rqq-BJ-X88" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="57" id="MIl-ED-cla"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="u9p-LA-7vh" secondAttribute="bottom" constant="20" id="OFX-56-Vh6"/>
+                            <constraint firstItem="mtU-DB-vlD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="224" id="OUf-M8-ydv"/>
+                            <constraint firstItem="Pvz-gj-1Gi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="SHd-kx-5dl"/>
+                            <constraint firstItem="fib-Xu-42Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="441" id="TUd-Iw-BpB"/>
+                            <constraint firstItem="mDh-MM-c59" firstAttribute="leading" secondItem="qxb-1b-cIP" secondAttribute="trailing" constant="-120" id="Tpv-Hu-LXS"/>
+                            <constraint firstItem="Pvz-gj-1Gi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VZI-cV-ODf"/>
+                            <constraint firstItem="fib-Xu-42Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="224" id="VhI-qF-3Kz"/>
+                            <constraint firstItem="u9p-LA-7vh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="126" id="XD1-4l-PQL"/>
+                            <constraint firstItem="qxb-1b-cIP" firstAttribute="top" secondItem="dIr-m3-mr0" secondAttribute="bottom" constant="186.5" id="Xgq-jA-B7f"/>
+                            <constraint firstItem="acf-HL-c03" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="57" id="bDM-yl-kuN"/>
+                            <constraint firstItem="mDh-MM-c59" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="357" id="dg1-7w-hSL"/>
+                            <constraint firstItem="GwS-jE-eq1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="36" id="feC-Dc-soj"/>
+                            <constraint firstItem="mtU-DB-vlD" firstAttribute="top" secondItem="dIr-m3-mr0" secondAttribute="bottom" constant="90.5" id="g8b-Tb-gfg"/>
+                            <constraint firstItem="dIr-m3-mr0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="46" id="kOn-ME-7n3"/>
+                            <constraint firstItem="xgU-SV-MzG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="295" id="kZB-mM-xhZ"/>
+                            <constraint firstAttribute="trailing" secondItem="GwS-jE-eq1" secondAttribute="trailing" constant="36" id="nUc-SV-mfd"/>
+                            <constraint firstItem="Rqq-BJ-X88" firstAttribute="top" secondItem="GwS-jE-eq1" secondAttribute="bottom" constant="25" id="qBZ-db-DTf"/>
+                            <constraint firstItem="xgU-SV-MzG" firstAttribute="top" secondItem="dIr-m3-mr0" secondAttribute="bottom" constant="235.5" id="wbN-L7-GiP"/>
+                            <constraint firstItem="kNe-UD-slW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="57" id="xGl-BZ-WeT"/>
+                            <constraint firstItem="kNe-UD-slW" firstAttribute="top" secondItem="TqL-qD-KbH" secondAttribute="bottom" constant="20" id="yW7-c9-iFc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Calculate" destination="u9p-LA-7vh" id="AS3-d0-nNQ"/>
+                        <outlet property="FundLabel" destination="fib-Xu-42Q" id="wIa-PN-Ous"/>
+                        <outlet property="FundSwitch" destination="Mw5-97-UXv" id="GlV-NJ-2zu"/>
+                        <outlet property="OneByOnSwitch" destination="xgU-SV-MzG" id="RMt-hP-njk"/>
+                        <outlet property="OneByOneButton" destination="HaI-SQ-C4E" id="wO9-0b-KMj"/>
+                        <outlet property="ServiceFee" destination="GwS-jE-eq1" id="u0a-Mj-Wce"/>
+                        <outlet property="ServiceLabel" destination="mtU-DB-vlD" id="44A-hM-or7"/>
+                        <outlet property="totalAmount" destination="wXe-UC-dc4" id="fuc-h3-0VE"/>
+                        <outlet property="totalPeopleLabel" destination="mDh-MM-c59" id="fsv-jq-CFx"/>
+                        <outlet property="totalPeopleStepper" destination="qxb-1b-cIP" id="EIg-wM-MCa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="6.746626686656672"/>
         </scene>
     </scenes>
 </document>
