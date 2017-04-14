@@ -10,30 +10,48 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //result view
     @IBOutlet weak var ResultView: UIView!
-    
     @IBOutlet weak var howMuch: UILabel!
     
+    //totalamount
     @IBOutlet weak var totalAmount: UITextField!
     
+    //service fee
     @IBOutlet weak var ServiceFee: UISegmentedControl!
     @IBOutlet weak var ServiceLabel: UILabel!
     
+    //stepper
     @IBOutlet weak var totalPeopleStepper: UIStepper!
     @IBOutlet weak var totalPeopleLabel: UILabel!
     
+    //onebyone
     @IBOutlet weak var OneByOnSwitch: UISwitch!
-    
     @IBOutlet weak var OneByOneButton: UIButton!
     
+    //fund
     @IBOutlet weak var FundSwitch: UISwitch!
-    
     @IBOutlet weak var FundLabel: UILabel!
     
+    //calculate bt
     @IBOutlet weak var Calculate: UIButton!
     
-    var fund = "0"
     
+    //pop up
+    @IBOutlet weak var popUp: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var MyMeal: UITextField!
+    @IBOutlet weak var P1Meal: UITextField!
+    @IBOutlet weak var P2Meal: UITextField!
+    @IBOutlet weak var P3Meal: UITextField!
+    @IBOutlet weak var detailView: UIView!
+    
+    
+    
+    
+    var fund = "0.0"
+    
+    var meMeal = "0.0"
     var person1 = "0.0"
     var person2 = "0.0"
     var person3 = "0.0"
@@ -52,6 +70,8 @@ class ViewController: UIViewController {
         
         if OneByOnSwitch.isOn{
             OneByOneButton.isHidden = false
+        } else{
+            OneByOneButton.isHidden = true
         }
         
     }
@@ -61,7 +81,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func Detail(_ sender: Any) {
-        AddEach()
+        popUp.isHidden = false
+        scrollView.isHidden = false
+        detailView.isHidden = false
     }
     
     @IBAction func ActionSegment(_ sender: Any) {
@@ -77,75 +99,26 @@ class ViewController: UIViewController {
             break; 
         }
     }
-    func AddEach() {
-        // 建立一個提示框
-        let alertController = UIAlertController(
-            title: "單點紀錄",
-            message: "請輸入每人餐點金額(平分餐點不須填寫)",
-            preferredStyle: .alert)
-        
-        
-        
-        // 建立N個輸入框
-//        alertController.addTextField {
-//            (txtEmail) -> Void in
-//            txtEmail.placeholder = "<Your email here>"
-//        }
-        
-        alertController.addTextField {
-            (textField: UITextField!) -> Void in
-            textField.placeholder = "My Meal $"
-            self.person1 = textField.text!
-        }
-        alertController.addTextField {
-            (textField: UITextField!) -> Void in
-            textField.placeholder = "Friend 1 Meal $"
-            self.person2 = textField.text!
-        }
-        alertController.addTextField {
-            (textField: UITextField!) -> Void in
-            textField.placeholder = "Friend 2 Meal $"
-            self.person3 = textField.text!
-        }
-        /*
-        alertController.addTextField {
-            (textField: UITextField!) -> Void in
-            textField.placeholder = "Person 4"
-        }
-        alertController.addTextField {
-            (textField: UITextField!) -> Void in
-            textField.placeholder = "Person 5"
-        }
-        alertController.addTextField {
-            (textField: UITextField!) -> Void in
-            textField.placeholder = "Person 6"
-        }
-         */
-        
-        // 建立[取消]按鈕
-        let cancelAction = UIAlertAction(
-            title: "取消",
-            style: .cancel,
-            handler: nil)
-        alertController.addAction(cancelAction)
-        
-        // 建立[確認]按鈕
-        let okAction = UIAlertAction(
-            title: "確認",
-            style: UIAlertActionStyle.default) {
-                (action: UIAlertAction!) -> Void in
-               
-                
-               
-        }
-        alertController.addAction(okAction)
-        
-        // 顯示提示框
-        self.present(
-            alertController,
-            animated: true,
-            completion: nil)
+    
+    
+    @IBAction func PopUpDelete(_ sender: Any) {
+        popUp.isHidden = true
     }
+    
+    
+    @IBAction func PopUpConfirm(_ sender: Any) {
+        popUp.isHidden = true
+        
+        self.meMeal = MyMeal.text!
+        self.person1 = P1Meal.text!
+        self.person2 = P2Meal.text!
+        self.person3 = P3Meal.text!
+
+    
+    
+    
+    }
+    
     
     
     @IBAction func ActionFund(_ sender: Any) {
@@ -182,7 +155,10 @@ class ViewController: UIViewController {
             style: UIAlertActionStyle.default) {
                 (action: UIAlertAction!) -> Void in
                 
-            person1 = text
+                let firstTextField = alertController.textFields![0] as UITextField
+                self.fund = firstTextField.text!
+                self.FundLabel.text = firstTextField.text
+                self.FundLabel.isHidden = false
                 
                 
         }
@@ -202,9 +178,26 @@ class ViewController: UIViewController {
             var totalOnebyOne = Double(person1)! + Double(person2)! + Double(person3)!
             
             if Double(totalAmount.text!)! - totalOnebyOne - Double(fund)! > 0{
-                var result = (Double(totalAmount.text!)! - totalOnebyOne - Double(fund)!)/Double(totalPeopleLabel.text!)!
+                
+                var serviceChargeOrNot = 0.0
+                
+                
+                switch ServiceFee.selectedSegmentIndex {
+                case 0:
+                    serviceChargeOrNot = 0.00
+                case 1:
+                    serviceChargeOrNot = 0.00
+                case 2:
+                    serviceChargeOrNot = 0.10
+                default:
+                    break
+                }
+                
+
+                var result = (Double(totalAmount.text!)! - totalOnebyOne - Double(fund)!)*serviceChargeOrNot/Double(totalPeopleLabel.text!)!
                 howMuch.text = String(result)
                 ResultView.isHidden = false
+                
             }
         }
         

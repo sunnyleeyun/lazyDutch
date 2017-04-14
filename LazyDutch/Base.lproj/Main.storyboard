@@ -22,33 +22,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lazy &amp; " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvz-gj-1Gi">
-                                <rect key="frame" x="0.0" y="20" width="129.5" height="72"/>
+                                <rect key="frame" x="0.0" y="20" width="130" height="72"/>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="21"/>
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DUTCH!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIr-m3-mr0">
-                                <rect key="frame" x="46" y="69" width="266" height="102.5"/>
+                                <rect key="frame" x="46" y="69" width="266" height="103"/>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqL-qD-KbH">
-                                <rect key="frame" x="57" y="211.5" width="119" height="31"/>
+                                <rect key="frame" x="57" y="212" width="119" height="31"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Fee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNe-UD-slW">
-                                <rect key="frame" x="57" y="262.5" width="102" height="31"/>
+                                <rect key="frame" x="57" y="263" width="102" height="31"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wXe-UC-dc4">
-                                <rect key="frame" x="224" y="211.5" width="120" height="36"/>
+                                <rect key="frame" x="224" y="212" width="120" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="NGC-sI-nel"/>
                                 </constraints>
@@ -57,7 +57,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One By One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acf-HL-c03">
-                                <rect key="frame" x="57" y="407.5" width="114" height="31"/>
+                                <rect key="frame" x="57" y="408" width="114" height="31"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -77,7 +77,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqq-BJ-X88">
-                                <rect key="frame" x="57" y="356.5" width="109.5" height="31"/>
+                                <rect key="frame" x="57" y="357" width="110" height="31"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -89,7 +89,7 @@
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fund " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lei-Z8-NWz">
-                                <rect key="frame" x="57" y="458.5" width="50.5" height="31"/>
+                                <rect key="frame" x="57" y="459" width="51" height="31"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -119,7 +119,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GwS-jE-eq1">
-                                <rect key="frame" x="36" y="303.5" width="303" height="29"/>
+                                <rect key="frame" x="36" y="304" width="303" height="29"/>
                                 <segments>
                                     <segment title="No Need"/>
                                     <segment title="10% Included"/>
@@ -145,33 +145,138 @@
                                     <action selector="Detail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ard-yT-ROF"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXp-Ep-fvy">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JXp-Ep-fvy">
                                 <rect key="frame" x="74" y="507" width="226" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4V-UH-Hlq">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4V-UH-Hlq">
                                         <rect key="frame" x="206" y="32" width="20" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="gHL-2s-eMR"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSL-Aa-zl8">
-                                        <rect key="frame" x="147" y="32" width="50.5" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSL-Aa-zl8">
+                                        <rect key="frame" x="133" y="32" width="65" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65" id="Mg3-vS-Sw6"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I need to pay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y51-C0-eLy">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I need to pay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y51-C0-eLy">
                                         <rect key="frame" x="0.0" y="32" width="116" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="WSL-Aa-zl8" firstAttribute="baseline" secondItem="h4V-UH-Hlq" secondAttribute="baseline" id="9zi-x3-U6D"/>
+                                    <constraint firstItem="WSL-Aa-zl8" firstAttribute="leading" secondItem="y51-C0-eLy" secondAttribute="trailing" constant="17" id="FgN-jf-boz"/>
+                                    <constraint firstAttribute="trailing" secondItem="h4V-UH-Hlq" secondAttribute="trailing" id="L2Z-dL-yeN"/>
+                                    <constraint firstItem="y51-C0-eLy" firstAttribute="leading" secondItem="JXp-Ep-fvy" secondAttribute="leading" id="ON7-dA-fGH"/>
+                                    <constraint firstAttribute="height" constant="95" id="RK0-5A-orw"/>
+                                    <constraint firstItem="WSL-Aa-zl8" firstAttribute="top" secondItem="JXp-Ep-fvy" secondAttribute="top" constant="32" id="UyH-B4-0yg"/>
+                                    <constraint firstItem="y51-C0-eLy" firstAttribute="baseline" secondItem="WSL-Aa-zl8" secondAttribute="baseline" id="WgX-xE-0wN"/>
+                                    <constraint firstItem="h4V-UH-Hlq" firstAttribute="leading" secondItem="WSL-Aa-zl8" secondAttribute="trailing" constant="8" symbolic="YES" id="f8g-zL-FbD"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NKx-Fo-Poj">
+                                <rect key="frame" x="34" y="163" width="308" height="336"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="it7-SP-sm0">
+                                        <rect key="frame" x="8" y="293" width="142" height="35"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBV-xq-PYc">
+                                                <rect key="frame" x="0.0" y="-4" width="140" height="43"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="142" id="IJY-XL-huR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                                <state key="normal" title="DELETE"/>
+                                                <connections>
+                                                    <action selector="Calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Epa-e9-IIK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bNj-zd-Q6K">
+                                        <rect key="frame" x="8" y="8" width="292" height="277"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OfE-xe-HUm">
+                                                <rect key="frame" x="0.0" y="0.0" width="292" height="277"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="&lt; My Meal $ &gt;" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Llv-J4-Wlw">
+                                                        <rect key="frame" x="47" y="38" width="199" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="&lt; P1 Meal $ &gt;" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tWA-1Z-JOn">
+                                                        <rect key="frame" x="47" y="92" width="199" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="&lt; P2 Meal $ &gt;" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Sk-oZ-4ks">
+                                                        <rect key="frame" x="47" y="145" width="199" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="&lt; P2 Meal $ &gt;" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTt-7e-q5h">
+                                                        <rect key="frame" x="47" y="197" width="199" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="OfE-xe-HUm" secondAttribute="trailing" id="MDP-Hp-eba"/>
+                                            <constraint firstItem="OfE-xe-HUm" firstAttribute="leading" secondItem="bNj-zd-Q6K" secondAttribute="leading" id="Tnv-4h-F9Q"/>
+                                            <constraint firstItem="OfE-xe-HUm" firstAttribute="top" secondItem="bNj-zd-Q6K" secondAttribute="top" id="aWd-RP-qYb"/>
+                                            <constraint firstAttribute="bottom" secondItem="OfE-xe-HUm" secondAttribute="bottom" id="cxc-0O-4mC"/>
+                                        </constraints>
+                                    </scrollView>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vza-TA-6hC">
+                                        <rect key="frame" x="156" y="293" width="142" height="35"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtj-Ke-fFi">
+                                                <rect key="frame" x="0.0" y="-4" width="140" height="43"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="142" id="T4V-mt-vEX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                                <state key="normal" title="CONFIRM"/>
+                                                <connections>
+                                                    <action selector="Calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Avi-uo-fvN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Vza-TA-6hC" secondAttribute="trailing" constant="8" id="JU1-lp-DxB"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vza-TA-6hC" secondAttribute="bottom" constant="8" id="KpQ-ks-Dwb"/>
+                                    <constraint firstItem="it7-SP-sm0" firstAttribute="leading" secondItem="NKx-Fo-Poj" secondAttribute="leading" constant="8" id="LZl-0H-pX1"/>
+                                    <constraint firstItem="Vza-TA-6hC" firstAttribute="top" secondItem="bNj-zd-Q6K" secondAttribute="bottom" constant="8" id="jwo-lo-5FE"/>
+                                    <constraint firstItem="it7-SP-sm0" firstAttribute="top" secondItem="bNj-zd-Q6K" secondAttribute="bottom" constant="8" id="sag-pI-aW2"/>
+                                    <constraint firstAttribute="bottom" secondItem="it7-SP-sm0" secondAttribute="bottom" constant="8" id="z2y-ta-ygO"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -202,14 +307,18 @@
                             <constraint firstItem="fib-Xu-42Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="224" id="VhI-qF-3Kz"/>
                             <constraint firstItem="u9p-LA-7vh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="126" id="XD1-4l-PQL"/>
                             <constraint firstItem="qxb-1b-cIP" firstAttribute="top" secondItem="dIr-m3-mr0" secondAttribute="bottom" constant="186.5" id="Xgq-jA-B7f"/>
+                            <constraint firstAttribute="trailing" secondItem="NKx-Fo-Poj" secondAttribute="trailing" constant="33" id="YT9-10-99G"/>
+                            <constraint firstItem="JXp-Ep-fvy" firstAttribute="centerX" secondItem="u9p-LA-7vh" secondAttribute="centerX" id="aXf-Fe-P3k"/>
                             <constraint firstItem="acf-HL-c03" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="57" id="bDM-yl-kuN"/>
                             <constraint firstItem="mDh-MM-c59" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="357" id="dg1-7w-hSL"/>
                             <constraint firstItem="GwS-jE-eq1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="36" id="feC-Dc-soj"/>
                             <constraint firstItem="mtU-DB-vlD" firstAttribute="top" secondItem="dIr-m3-mr0" secondAttribute="bottom" constant="90.5" id="g8b-Tb-gfg"/>
                             <constraint firstItem="dIr-m3-mr0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="46" id="kOn-ME-7n3"/>
                             <constraint firstItem="xgU-SV-MzG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="295" id="kZB-mM-xhZ"/>
+                            <constraint firstItem="NKx-Fo-Poj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="34" id="mAU-0a-mQm"/>
                             <constraint firstAttribute="trailing" secondItem="GwS-jE-eq1" secondAttribute="trailing" constant="36" id="nUc-SV-mfd"/>
                             <constraint firstItem="Rqq-BJ-X88" firstAttribute="top" secondItem="GwS-jE-eq1" secondAttribute="bottom" constant="25" id="qBZ-db-DTf"/>
+                            <constraint firstItem="u9p-LA-7vh" firstAttribute="top" secondItem="JXp-Ep-fvy" secondAttribute="bottom" constant="2" id="tf3-km-VBM"/>
                             <constraint firstItem="xgU-SV-MzG" firstAttribute="top" secondItem="dIr-m3-mr0" secondAttribute="bottom" constant="235.5" id="wbN-L7-GiP"/>
                             <constraint firstItem="kNe-UD-slW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="57" id="xGl-BZ-WeT"/>
                             <constraint firstItem="kNe-UD-slW" firstAttribute="top" secondItem="TqL-qD-KbH" secondAttribute="bottom" constant="20" id="yW7-c9-iFc"/>
@@ -219,12 +328,19 @@
                         <outlet property="Calculate" destination="u9p-LA-7vh" id="AS3-d0-nNQ"/>
                         <outlet property="FundLabel" destination="fib-Xu-42Q" id="wIa-PN-Ous"/>
                         <outlet property="FundSwitch" destination="Mw5-97-UXv" id="GlV-NJ-2zu"/>
+                        <outlet property="MyMeal" destination="Llv-J4-Wlw" id="569-bj-dmq"/>
                         <outlet property="OneByOnSwitch" destination="xgU-SV-MzG" id="RMt-hP-njk"/>
                         <outlet property="OneByOneButton" destination="HaI-SQ-C4E" id="wO9-0b-KMj"/>
+                        <outlet property="P1Meal" destination="tWA-1Z-JOn" id="ykp-2e-npG"/>
+                        <outlet property="P2Meal" destination="8Sk-oZ-4ks" id="ISI-4b-NxK"/>
+                        <outlet property="P3Meal" destination="WTt-7e-q5h" id="5uf-rU-EG3"/>
                         <outlet property="ResultView" destination="JXp-Ep-fvy" id="cnm-qT-JbG"/>
                         <outlet property="ServiceFee" destination="GwS-jE-eq1" id="u0a-Mj-Wce"/>
                         <outlet property="ServiceLabel" destination="mtU-DB-vlD" id="44A-hM-or7"/>
+                        <outlet property="detailView" destination="OfE-xe-HUm" id="X7C-YM-kzu"/>
                         <outlet property="howMuch" destination="WSL-Aa-zl8" id="13g-Yx-fW1"/>
+                        <outlet property="popUp" destination="NKx-Fo-Poj" id="LPk-0k-gcW"/>
+                        <outlet property="scrollView" destination="bNj-zd-Q6K" id="vn8-fu-NJZ"/>
                         <outlet property="totalAmount" destination="wXe-UC-dc4" id="fuc-h3-0VE"/>
                         <outlet property="totalPeopleLabel" destination="mDh-MM-c59" id="fsv-jq-CFx"/>
                         <outlet property="totalPeopleStepper" destination="qxb-1b-cIP" id="EIg-wM-MCa"/>
@@ -232,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="80.799999999999997" y="6.746626686656672"/>
+            <point key="canvasLocation" x="-4" y="17.541229385307346"/>
         </scene>
     </scenes>
 </document>
