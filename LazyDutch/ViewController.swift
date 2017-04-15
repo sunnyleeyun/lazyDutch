@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     //result view
     @IBOutlet weak var ResultView: UIView!
@@ -59,13 +59,25 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        self.totalAmount.delegate = self
+        self.MyMeal.delegate = self
+        self.P1Meal.delegate = self
+        self.P2Meal.delegate = self
+        self.P3Meal.delegate = self
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
     @IBAction func ActionOneByOne(_ sender: Any) {
         
         if OneByOnSwitch.isOn{
@@ -114,7 +126,8 @@ class ViewController: UIViewController {
         self.person2 = P2Meal.text!
         self.person3 = P3Meal.text!
 
-    
+        print(self.MyMeal)
+        print(self.person1)
     
     
     }
@@ -122,8 +135,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func ActionFund(_ sender: Any) {
-        
-        AddFund()
+        if FundSwitch.isOn{
+            AddFund()
+        }
     }
     
     func AddFund() {
@@ -175,7 +189,7 @@ class ViewController: UIViewController {
     
     @IBAction func Calculate(_ sender: Any) {
         if totalAmount.text != ""{
-            var totalOnebyOne = Double(person1)! + Double(person2)! + Double(person3)!
+            var totalOnebyOne = Double(meMeal)! + Double(person1)! + Double(person2)! + Double(person3)!
             
             if Double(totalAmount.text!)! - totalOnebyOne - Double(fund)! > 0{
                 
@@ -194,7 +208,7 @@ class ViewController: UIViewController {
                 }
                 
 
-                var result = (Double(totalAmount.text!)! - totalOnebyOne - Double(fund)!)*serviceChargeOrNot/Double(totalPeopleLabel.text!)!
+                var result = (Double(totalAmount.text!)! - totalOnebyOne - Double(fund)!) * (1+serviceChargeOrNot)/Double(totalPeopleLabel.text!)!
                 howMuch.text = String(result)
                 ResultView.isHidden = false
                 
