@@ -187,10 +187,10 @@
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKx-Fo-Poj">
-                                <rect key="frame" x="34" y="163" width="308" height="336"/>
+                                <rect key="frame" x="34" y="163" width="320" height="336"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vza-TA-6hC">
-                                        <rect key="frame" x="158" y="293" width="142" height="35"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vza-TA-6hC">
+                                        <rect key="frame" x="165" y="293" width="147" height="35"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtj-Ke-fFi">
                                                 <rect key="frame" x="0.0" y="-4" width="142" height="43"/>
@@ -207,43 +207,19 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="Mtj-Ke-fFi" firstAttribute="top" secondItem="Vza-TA-6hC" secondAttribute="top" constant="-4" id="84E-df-n24"/>
-                                            <constraint firstItem="Mtj-Ke-fFi" firstAttribute="leading" secondItem="Vza-TA-6hC" secondAttribute="leading" id="9fJ-qi-1E8"/>
-                                            <constraint firstItem="Mtj-Ke-fFi" firstAttribute="centerY" secondItem="Vza-TA-6hC" secondAttribute="centerY" id="C5r-ZI-pqf"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="it7-SP-sm0">
-                                        <rect key="frame" x="8" y="293" width="144" height="35"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBV-xq-PYc">
-                                                <rect key="frame" x="0.0" y="-4" width="142" height="43"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="142" id="IJY-XL-huR"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
-                                                <state key="normal" title="DELETE"/>
-                                                <connections>
-                                                    <action selector="Calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Epa-e9-IIK"/>
-                                                    <action selector="PopUpDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rNk-RJ-Rku"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="mBV-xq-PYc" firstAttribute="leading" secondItem="it7-SP-sm0" secondAttribute="leading" id="2i5-l0-WUH"/>
-                                            <constraint firstItem="mBV-xq-PYc" firstAttribute="centerY" secondItem="it7-SP-sm0" secondAttribute="centerY" id="dM3-wq-Nwh"/>
-                                            <constraint firstItem="mBV-xq-PYc" firstAttribute="top" secondItem="it7-SP-sm0" secondAttribute="top" constant="-4" id="iYm-Be-Ug8"/>
-                                            <constraint firstAttribute="trailing" secondItem="mBV-xq-PYc" secondAttribute="trailing" constant="2" id="zPv-yC-dqy"/>
+                                            <constraint firstItem="Mtj-Ke-fFi" firstAttribute="top" secondItem="Vza-TA-6hC" secondAttribute="top" constant="-4" id="Gfm-sR-3mg"/>
+                                            <constraint firstItem="Mtj-Ke-fFi" firstAttribute="centerY" secondItem="Vza-TA-6hC" secondAttribute="centerY" id="Mb5-dL-I1a"/>
+                                            <constraint firstItem="Mtj-Ke-fFi" firstAttribute="leading" secondItem="Vza-TA-6hC" secondAttribute="leading" id="Xtm-5k-MAD"/>
                                         </constraints>
                                     </view>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNj-zd-Q6K">
-                                        <rect key="frame" x="8" y="8" width="292" height="277"/>
+                                        <rect key="frame" x="8" y="8" width="304" height="277"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OfE-xe-HUm">
-                                                <rect key="frame" x="0.0" y="0.0" width="292" height="277"/>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OfE-xe-HUm">
+                                                <rect key="frame" x="2" y="2" width="301" height="273"/>
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="&lt; My Meal $ &gt;" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Llv-J4-Wlw">
-                                                        <rect key="frame" x="47" y="38" width="199" height="30"/>
+                                                        <rect key="frame" x="47" y="38" width="211" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="7bn-7g-gHT"/>
                                                         </constraints>
@@ -252,7 +228,7 @@
                                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="&lt; P1 Meal $ &gt;" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tWA-1Z-JOn">
-                                                        <rect key="frame" x="47" y="92" width="199" height="30"/>
+                                                        <rect key="frame" x="47" y="92" width="211" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="kkF-Z8-FVz"/>
                                                         </constraints>
@@ -261,7 +237,7 @@
                                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="&lt; P2 Meal $ &gt;" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Sk-oZ-4ks">
-                                                        <rect key="frame" x="47" y="145" width="199" height="30"/>
+                                                        <rect key="frame" x="47" y="145" width="211" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="5wj-mg-wuF"/>
                                                         </constraints>
@@ -269,8 +245,8 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="&lt; P2 Meal $ &gt;" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTt-7e-q5h">
-                                                        <rect key="frame" x="47" y="197" width="199" height="30"/>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="&lt; P3 Meal $ &gt;" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTt-7e-q5h">
+                                                        <rect key="frame" x="47" y="197" width="211" height="30"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -303,6 +279,30 @@
                                             <constraint firstItem="OfE-xe-HUm" firstAttribute="centerX" secondItem="bNj-zd-Q6K" secondAttribute="centerX" id="wJr-fL-hGk"/>
                                         </constraints>
                                     </scrollView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="it7-SP-sm0">
+                                        <rect key="frame" x="8" y="293" width="144" height="35"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBV-xq-PYc">
+                                                <rect key="frame" x="0.0" y="-4" width="142" height="43"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="142" id="IJY-XL-huR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                                <state key="normal" title="DELETE"/>
+                                                <connections>
+                                                    <action selector="Calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Epa-e9-IIK"/>
+                                                    <action selector="PopUpDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rNk-RJ-Rku"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="mBV-xq-PYc" firstAttribute="leading" secondItem="it7-SP-sm0" secondAttribute="leading" id="2i5-l0-WUH"/>
+                                            <constraint firstItem="mBV-xq-PYc" firstAttribute="centerY" secondItem="it7-SP-sm0" secondAttribute="centerY" id="dM3-wq-Nwh"/>
+                                            <constraint firstItem="mBV-xq-PYc" firstAttribute="top" secondItem="it7-SP-sm0" secondAttribute="top" constant="-4" id="iYm-Be-Ug8"/>
+                                            <constraint firstAttribute="trailing" secondItem="mBV-xq-PYc" secondAttribute="trailing" constant="2" id="zPv-yC-dqy"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
@@ -348,7 +348,7 @@
                             <constraint firstItem="fib-Xu-42Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="224" id="VhI-qF-3Kz"/>
                             <constraint firstItem="u9p-LA-7vh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="126" id="XD1-4l-PQL"/>
                             <constraint firstItem="qxb-1b-cIP" firstAttribute="top" secondItem="dIr-m3-mr0" secondAttribute="bottom" constant="186.5" id="Xgq-jA-B7f"/>
-                            <constraint firstAttribute="trailing" secondItem="NKx-Fo-Poj" secondAttribute="trailing" constant="33" id="YT9-10-99G"/>
+                            <constraint firstAttribute="trailing" secondItem="NKx-Fo-Poj" secondAttribute="trailing" constant="21" id="YT9-10-99G"/>
                             <constraint firstItem="JXp-Ep-fvy" firstAttribute="centerX" secondItem="u9p-LA-7vh" secondAttribute="centerX" id="aXf-Fe-P3k"/>
                             <constraint firstItem="acf-HL-c03" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="57" id="bDM-yl-kuN"/>
                             <constraint firstItem="mDh-MM-c59" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="357" id="dg1-7w-hSL"/>
