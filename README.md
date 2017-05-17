@@ -1,3 +1,3 @@
 # lazyDutch
 
-Dutch 2.0
+Go Dutch 2.0
